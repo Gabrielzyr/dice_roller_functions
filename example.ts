@@ -4,8 +4,11 @@ import { CreateTokens, ParseTokens } from "./dice_roller";
 const testeSimple1 = '5#15+5d465!+10-20-2d10>23+50d99'
 const testeSimple2 = '5#15+5d465!-((d200+50)/2)+10-20-2d10>50d99'
 // console.log('teste1', CreateTokens(teste1));
-console.log(// CreateTokens(testeSimples),
-    `String: ${testeSimple1}\n`,
+console.log(
+    `\nString: ${testeSimple1}\n`,
+    `Tokens:\n`,
+    CreateTokens(testeSimple1),
+    `\nParsed Value:\n`,
     ParseTokens(CreateTokens(testeSimple1))
 );
 
